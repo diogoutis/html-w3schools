@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML responsive 07</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #aaaaaa;
+        }
+
+        #cab {
+            background-color: #e5e5e5;
+            padding: 15px;
+            text-align: center;
+        }
+
+        #pri {
+            overflow: auto;
+        }
+
+        .menu {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+
+        .menu a {
+            display: block;
+            background-color: #e5e5e5;
+            padding: 8px;
+            margin-top: 7px;
+            width: 100%;
+            color: black;
+        }
+
+        .main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+        }
+
+        .right {
+            background-color: #e5e5e5;
+            float: left;
+            width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+
+        #co {
+            background-color: #e5e5e5;
+            text-align: center;
+            padding: 10px;
+            margin-top: 7px;
+        }
+
+        @media only screen and (max-width: 620px) {
+            .menu, .main, .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="cab">
+        <h1>Hello World</h1>
+    </div>
+
+    <div id="pri">
+        <div class="menu">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </div>
+    
+
+        <div class="main">
+            <h2>Lorum Ipsum</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit delectus, exercitationem animi, illo illum cum porro nesciunt veritatis, ex sint ipsam cupiditate molestias quis velit. Voluptas mollitia ab quis aliquid.</p>
+        </div>
+
+        <div class="right">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, aliquid.</p>
+        </div>
+    </div>
+
+    <div id="co">
+        &copy; copyright diogoutis
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML javascript 05</title>
+    <style>
+        button {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo">Olá, mundo!</p>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <script>
+        document.getElementById('demo').style.textAlign = 'center';
+
+        function myFunction() {
+            const demo = document.getElementById('demo');
+            demo.style.width = '50%';
+            demo.style.margin = '0 auto 20px auto';
+            demo.style.color = 'blue';
+            demo.style.fontSize = '2em';
+            demo.style.fontWeight = 'bold';
+            demo.style.fontFamily = 'Arial, sans-serif';
+            demo.style.backgroundColor = '#F0CA1F';
+        }
+       
+    </script>
+</body>
+</html>

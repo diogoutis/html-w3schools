@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML semantics 03</title>
+    <style>
+        .all-browsers {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        .all-browsers > h1, .browser {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .browser {
+            background-color: white;
+        }
+
+        .browser > h2, p {
+            margin: 4px;
+            font-size: 90%;
+        }
+    </style>
+</head>
+<body>
+    <article class="all-browsers">
+        <h1>Most Popular Browsers</h1>
+        <article class="browser">
+            <h2>Google Chrome</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquam, id maxime deleniti incidunt amet. Officia consequatur enim, ut id consectetur eveniet tenetur praesentium, incidunt omnis ipsa sit repellendus autem.</p>
+        </article>
+
+        <article class="browser">
+            <h2>Mozilla Firefox</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dicta at molestias in est ad voluptate mollitia natus error saepe eaque, quidem omnis impedit suscipit pariatur consectetur et! Quidem, nemo!</p>
+        </article>
+
+        <article class="browser">
+            <h2>Microsoft Edge</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, dolore? Excepturi distinctio dolor consequuntur quidem! Quaerat sunt minus accusamus, sequi nemo rerum ab recusandae dolor inventore ipsam. Laborum, deleniti veniam.</p>
+        </article>
+    </article>
+</body>
+</html>

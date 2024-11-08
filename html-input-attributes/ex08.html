@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML input attributes 08</title>
+</head>
+<body>
+    <h1>The input pattern attributes</h1>
+
+    <p>The pattern attribute specifes expression that the input element's value is checked against.</p>
+
+    <form action="page.php">
+        <label for="country_code">Country code:</label>
+        <input type="text" name="country_code" id="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"> <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
